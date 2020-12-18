@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Password Generator</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="function.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3" style="text-shadow: 2px;">Password Generator</h1>
+      <p class="lead">Fill out the following to generate a random password!</p>
+      <hr class="my-2">
+      <p>
+        How many characters? <input type="number" id="len" value="12" min="8" max="128" /><br />
+      </p>
+      <p>
+        Uppercase: <input type="checkbox" id="upper" />
+      </p>
+      <p>
+        Lowercase: <input type="checkbox" id="lower" />
+      </p>
+      <p>
+        Numbers: <input type="checkbox" id="number" />
+      </p>
+      <p>
+        Symbols: <input type="checkbox" id="symbol" />
+      </p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="Jumbo action link" id="generate" role="button">Generate!</a>
+      </p>
+      <p>
+      <div>
+        <label for="YourPw"></label>
+        <textarea class="form-control" name="password" id="pw" rows="1" style="text-align:center;"></textarea>
+      </div>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
