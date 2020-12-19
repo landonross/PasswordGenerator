@@ -31,16 +31,16 @@ function getSymbol() {
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-//This is the function for when you press the button to generate what has been inputed and output into the text box
+//This is the function for when you press the button to generate what has been inputed to specify the parameters
 function generatePassword() {
     const len = lenEl.value;
 
     if (len < 8) {
-        alert("Must be atleast 8 characters long")
+        alert("Must be at least 8 characters long")
         return (len === "")
     }
     else if (len > 128) {
-        alert("Cannot be longer than 128 characters long")
+        alert("Cannot be longer than 128 characters")
         return (len === "")
     }
 
